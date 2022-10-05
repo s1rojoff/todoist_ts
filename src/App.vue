@@ -1,6 +1,10 @@
 <script setup lang="ts">
+  import {useStore} from "./store";
+  const store = useStore()
+   
 </script>
+
 <template>
-  <p class="text-red-500">salom</p>
+  <router-view></router-view>
 </template>
 
