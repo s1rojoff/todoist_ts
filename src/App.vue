@@ -1,10 +1,12 @@
-<script setup lang="ts">
-  import {useStore} from "./store";
-  const store = useStore()
-   
+<script setup>
+import featuresMain from "./components/features/featuresMain.vue";
+import HomePage from "./views/HomePage.vue";
 </script>
 
 <template>
-  <router-view></router-view>
+  <div>
+    <router-view></router-view>
+  </div>
 </template>
-
+<style scoped>
+</style>
