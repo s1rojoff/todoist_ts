@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 </script>
 <template>
   <svg width="17"  height="17">

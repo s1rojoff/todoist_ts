@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
   import modalSection from './modalSection.vue';
   import { useStore } from '../../../../../store';
   const store = useStore()

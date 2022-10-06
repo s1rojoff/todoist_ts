@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { useStore } from "../../../../store";
 import { defineProps } from "vue";
 const store = useStore();

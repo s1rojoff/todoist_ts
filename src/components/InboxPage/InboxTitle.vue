@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import hoverBtn from '../TodayPage/hoverBtn.vue'
     import ViewSvg from '../TodayPage/Svgs/ViewSvg.vue'
     import CommentSvg from './Svgs/CommentSvg.vue'

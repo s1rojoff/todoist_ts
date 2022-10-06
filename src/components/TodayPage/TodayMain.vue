@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {useStore} from "../../store";
     import TodayHeader from './todayHeader.vue';
     import TodayBody from './todayBody.vue';

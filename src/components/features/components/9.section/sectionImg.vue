@@ -1,4 +1,4 @@
-<script setup></script> 
+<script setup lang="ts"></script> 
 <template>
     <div class="w-full" >
         <div class="w-[1000px] mt-0 mx-auto">

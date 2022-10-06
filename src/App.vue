@@ -1,6 +1,4 @@
-<script setup>
-import featuresMain from "./components/features/featuresMain.vue";
-import HomePage from "./views/HomePage.vue";
+<script setup lang="ts">
 </script>
 
 <template>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import TaksBoard from './TaksBoard.vue'
 import TaskItem from './TaskItem.vue'
     import {useStore} from "../../store";

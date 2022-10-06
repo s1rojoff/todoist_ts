@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import sectionImg from './sectionImg.vue';
     import sectionTitle from './sectionTitle.vue';
 import SectionImg from './sectionImg.vue';

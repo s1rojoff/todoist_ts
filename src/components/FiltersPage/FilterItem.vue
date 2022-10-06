@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import FilterSvg from './Svgs/FilterSvg.vue'
     import FavoritesSvg from './Svgs/FavoritesSvg.vue'
     import EditSvg from '../TodayPage/Svgs/EditSvg.vue'

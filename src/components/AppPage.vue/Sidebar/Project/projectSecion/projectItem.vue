@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import SvgBtn from "../../../../MainComponents/SvgBtn.vue";
 import itemMenuSvg from "../Svg/itemMenuSvg.vue";
 import { defineProps, ref } from "vue";

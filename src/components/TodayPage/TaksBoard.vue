@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {ref} from 'vue'
     import hoverBtn from './hoverBtn.vue'
     import TodaySvg from './Svgs/TodaySvg.vue'

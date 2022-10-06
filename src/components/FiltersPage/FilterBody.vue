@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {defineEmits,ref} from 'vue'
     import FilterItem from './FilterItem.vue';
     import LabelItem from './LabelItem.vue';

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue'
 import ViewItem from './ViewItem.vue'
 import GroupSvg from './Svgs/GroupSvg.vue';

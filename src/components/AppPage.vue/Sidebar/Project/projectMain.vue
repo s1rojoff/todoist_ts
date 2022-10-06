@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import projectSection from './projectSecion/projectSection.vue';
 </script>
 <template>

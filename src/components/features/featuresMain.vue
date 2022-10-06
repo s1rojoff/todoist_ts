@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import headerMain from "../features/components/featHeader/headerMain.vue";
 import secondSectionMain from "./components/secondSection/secondSectionMain.vue";
 import ThirdSecMain from "./components/thirdSection/thirdSecMain.vue";
