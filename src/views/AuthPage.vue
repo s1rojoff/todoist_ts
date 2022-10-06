@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Logo from "../components/HomePage/Header/Logo.vue";
 import BaseBtn from "../components/MainComponents/BaseBtn.vue";
 import FooterMain from "../components/HomePage/Footer/FooterMain.vue";

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onMounted } from "@vue/runtime-core";
 import NavMain from "../components/AppPage.vue/AppNav/navMain.vue";
 import Sidebar from "../components/AppPage.vue/Sidebar/Sidebar.vue";

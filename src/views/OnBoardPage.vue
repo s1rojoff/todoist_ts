@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import OnboardMain from '../components/OnBoard/OnboardMain.vue';
 </script>
 

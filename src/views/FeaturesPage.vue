@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import featuresMain from '../components/features/featuresMain.vue';
 import HeaderMain from '../components/HomePage/Header/HeaderMain.vue';
 import FooterMain from '../components/HomePage/Footer/FooterMain.vue';

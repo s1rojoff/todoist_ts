@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import AuthTemplate from '../components/AuthPage/AuthTemplate.vue'
-import main from '../ts/VueRouter.ts'
+import main from '../ts/VueRouter'
 const {toSection} = main()
 </script>
 
