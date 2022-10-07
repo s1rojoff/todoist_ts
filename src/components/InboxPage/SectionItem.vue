@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {ref} from 'vue'
     import {useStore} from "../../store";
     import DownSvg from './Svgs/DownSvg.vue'

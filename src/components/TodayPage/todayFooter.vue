@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import SoroqSvg from "./Svgs/SoroqSvg.vue";
 </script>
 <template>

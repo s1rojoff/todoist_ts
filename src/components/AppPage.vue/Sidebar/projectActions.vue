@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ActionItem from "./actionItem.vue";
 import AboveSvg from "./Svg/aboveSvg.vue";
 import BelowSvg from "./Svg/belowSvg.vue";

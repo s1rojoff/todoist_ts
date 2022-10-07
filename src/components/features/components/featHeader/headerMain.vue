@@ -1,4 +1,4 @@
- <script setup>
+ <script setup lang="ts">
 import headerText from "./headerText.vue";
 import imgContent from "./imgContent.vue"
 import videoOverlay from "./videoOverlay.vue"

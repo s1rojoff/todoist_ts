@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import  {ref,defineProps,useAttrs} from 'vue'
     import deleteSvg from './Svgs/deleteSvg.vue'
     import DateSvg from './Svgs/DateSvg.vue'

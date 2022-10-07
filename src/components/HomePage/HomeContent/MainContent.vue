@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import FirstSection from "./FirstSection.vue";
 import SecondSection from "./SecondSection.vue";
 import ThirdSection from "./ThirdSection.vue";

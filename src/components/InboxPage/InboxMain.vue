@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import InboxTitle from './InboxTitle.vue'
 import InboxBody from './InboxBody.vue'
 </script>

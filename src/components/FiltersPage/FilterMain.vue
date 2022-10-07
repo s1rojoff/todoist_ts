@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import FilterTitle from './FilterTitle.vue'
     import FilterBody from './FilterBody.vue'
 </script>

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {defineEmits,useAttrs,defineProps} from 'vue'
     import DownSvg from '../InboxPage/Svgs/DownSvg.vue'
     import BtnShell from '../TodayPage/Svgs/BtnShell.vue'

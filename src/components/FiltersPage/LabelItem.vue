@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import LabelSvg from './Svgs/LabelSvg.vue'
 import FavoritesSvg from './Svgs/FavoritesSvg.vue'
 import EditSvg from '../TodayPage/Svgs/EditSvg.vue'

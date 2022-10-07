@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import AdobeSvg from "./Svgs/AdobeSvg.vue";
 import AmazonSvg from "./Svgs/AmazonSvg.vue";
 import DisneySvg from "./Svgs/DisneySvg.vue";

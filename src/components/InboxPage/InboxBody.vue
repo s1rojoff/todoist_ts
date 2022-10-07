@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {ref} from 'vue';
     import bodyAddTask from '../TodayPage/bodyAddTask.vue'
     import AddSection from './AddSection.vue'

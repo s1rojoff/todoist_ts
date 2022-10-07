@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import BodyAddTask from "./bodyAddTask.vue";
 import BodyImgSvg from "./Svgs/bodyImgSvg.vue";
 import BaseBtn from "../MainComponents/BaseBtn.vue";
