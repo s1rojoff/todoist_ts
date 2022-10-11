@@ -150,7 +150,8 @@ export const useStore = defineStore("store", {
       item : {
         name: "",
         color: ""
-      }
+      },
+      showFilterModal: false
     };
   },
 })
