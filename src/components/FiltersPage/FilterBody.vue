@@ -1,8 +1,16 @@
+<<<<<<< HEAD
+<script setup>
+    import {defineEmits,ref,} from 'vue';
+    import {useStore} from "../../store";
+=======
 <script setup lang="ts">
     import {defineEmits,ref} from 'vue'
+>>>>>>> 1514e2cb1af65ab73e18007a941c989cf26fbf37
     import FilterItem from './FilterItem.vue';
     import LabelItem from './LabelItem.vue';
     import BodyTitle from './BodyTitle.vue'
+    import modalMain from './FilterModal/modalMain.vue'
+    const store = useStore();
     let rotateFilter = ref(true);
     let rotateLabel = ref(true);
     function toggleVar() {
@@ -13,12 +21,13 @@
 
 <template>
     <div class="md:pl-32 md:pr-36 md:mt-7">
-        <BodyTitle :rotateClass="[rotateFilter ? 'rotate-0' : '-rotate-90']"  @clickDown="rotateFilter = !rotateFilter">Filters</BodyTitle>
+        <BodyTitle :rotateClass="[rotateFilter ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showFilterModal = true"  @clickDown="rotateFilter = !rotateFilter">Filters</BodyTitle>
         <div class="md:pl-5"><hr></div>
         <div v-if="rotateFilter">
             <FilterItem/>
             <FilterItem/>
             <FilterItem/>
+
         </div>
         <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
         <div v-if="rotateLabel">
@@ -27,6 +36,8 @@
             <LabelItem/>
             <LabelItem/>
             <LabelItem/>
+
         </div>
     </div>
+    <modalMain v-if="store.showFilterModal"/>
 </template>
