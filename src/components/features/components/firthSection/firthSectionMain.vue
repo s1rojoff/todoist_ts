@@ -1,4 +1,4 @@
-  <script setup>
+  <script setup lang="ts">
 import secondSecText from "../secondSection/secondSecText.vue";
 import selectItem from "../secondSection/selectItem.vue";
 import boardSvg from "./Svg/boardSvg.vue";

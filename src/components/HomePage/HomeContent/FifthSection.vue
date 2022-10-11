@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import BaseBtn from "../../MainComponents/BaseBtn.vue";
 </script>
 

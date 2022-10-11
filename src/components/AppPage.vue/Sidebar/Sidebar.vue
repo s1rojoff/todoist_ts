@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import sidebarItem from "./sidebarItem.vue";
 import inboxSvg from "./Svg/inboxSvg.vue";
 import letterHelper from "../../MainComponents/letterHelper.vue";

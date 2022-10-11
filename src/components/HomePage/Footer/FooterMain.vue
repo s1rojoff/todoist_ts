@@ -1,7 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import {ref} from 'vue'
 import { defineProps } from 'vue';
-const props = defineProps(["className"])
 import FooterLogo from "./FooterLogo.vue";
 import TwitterLogo from "../HomeContent/Svgs/TwitterLogo.vue";
 import YoutubeSvg from "../HomeContent/Svgs/YoutubeSvg.vue";
@@ -9,6 +8,7 @@ import FacebookSvg from "../HomeContent/Svgs/FacebookSvg.vue";
 import InstagramSvg from "../HomeContent/Svgs/InstagramSvg.vue";
 import FooterRight from "./FooterRight.vue";
 const langs = ref(['English', 'Dansk', 'Norsk', 'Polski', 'Russian'])
+const props = defineProps(["className"]);
 </script>
 
 <template>

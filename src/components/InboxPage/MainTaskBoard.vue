@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
     import {ref,defineProps,defineEmits,useAttrs} from 'vue'
     import hoverBtn from '../TodayPage/hoverBtn.vue'
     import TodaySvg from '../TodayPage/Svgs/TodaySvg.vue'

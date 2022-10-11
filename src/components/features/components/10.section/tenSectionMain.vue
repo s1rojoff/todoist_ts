@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import ratingTexts from './ratingTexts.vue';
 </script>
 <template>

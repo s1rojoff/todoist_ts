@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { defineProps, ref } from "vue";
 let titleShow = ref(false);
 const props = defineProps(["width"]);

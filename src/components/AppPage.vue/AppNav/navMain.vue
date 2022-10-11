@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import menuSvg from "./Svg/menuSvg.vue";
 import homeSvg from "./Svg/homeSvg.vue";
 import plusSvg from "./Svg/plusSvg.vue";

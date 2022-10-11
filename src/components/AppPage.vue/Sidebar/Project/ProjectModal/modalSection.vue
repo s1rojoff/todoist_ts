@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts"> 
 import infoSvg from "./Svg/infoSvg.vue";
 import BaseInput from "../../../../MainComponents/BaseInput.vue";
 import SelectColor from "./SelectColor.vue";

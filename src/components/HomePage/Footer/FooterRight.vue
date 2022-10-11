@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { ref, useAttrs } from 'vue';
 const attrs = useAttrs()
  const features = ref(['How It Works', 'For Teams', 'Pricing', 'Templates'])

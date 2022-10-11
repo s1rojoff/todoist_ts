@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import fooTopSecText from "./fooTopSecText.vue";
 import FooterSecImg from "./FooterSecImg.vue";
 import BaseBtn from "../../../MainComponents/BaseBtn.vue";

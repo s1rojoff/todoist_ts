@@ -1,11 +1,11 @@
-<script setup>
+<script setup lang="ts">
 import { reactive, computed, ref } from "vue";
 import colorsName from "./colorsName.vue";
 import ColorsName from "./colorsName.vue";
 import {useStore} from "../../../../../store"
 const store = useStore()
 store.$state.showBlock 
-var colorName = reactive("")
+var colorName = ref<string>("")
 const btn = ref("")
 let colorValue = ref("")
 function ReturnColor(a) {

@@ -1,4 +1,4 @@
-  <script setup>
+  <script setup lang="ts">
   import secondSecImg from "./secondSecImg.vue";
   import secondSecText from "./secondSecText.vue";
   import selectItem from "./selectItem.vue";

@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import sectionAdd from "./sectionAdd.vue";
 import logoImg from "./logoImg.vue";
 import subText from "./subText.vue";

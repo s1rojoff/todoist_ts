@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import downSvg from "../Svg/downSvg.vue";
 import plusSvg from "../Svg/plusSvg.vue";
 import SvgBtn from "../../../../MainComponents/SvgBtn.vue";
