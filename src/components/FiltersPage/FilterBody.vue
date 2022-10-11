@@ -1,15 +1,11 @@
-<<<<<<< HEAD
-<script setup>
-    import {defineEmits,ref,} from 'vue';
-    import {useStore} from "../../store";
-=======
 <script setup lang="ts">
+    import {useStore} from "../../store";
     import {defineEmits,ref} from 'vue'
->>>>>>> 1514e2cb1af65ab73e18007a941c989cf26fbf37
     import FilterItem from './FilterItem.vue';
     import LabelItem from './LabelItem.vue';
     import BodyTitle from './BodyTitle.vue'
     import modalMain from './FilterModal/modalMain.vue'
+    import LabelModalMain from '../FiltersPage/LabelModal/LabelModalMain.vue'
     const store = useStore();
     let rotateFilter = ref(true);
     let rotateLabel = ref(true);
@@ -39,5 +35,6 @@
 
         </div>
     </div>
-    <modalMain v-if="store.showFilterModal"/>
+<!--    <modalMain v-if="store.showFilterModal"/>-->
+    <LabelModalMain/>
 </template>
