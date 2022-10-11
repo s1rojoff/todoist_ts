@@ -6,7 +6,7 @@ import contentFooter from '../FilterModal/contentFooter.vue'
 
 <template>
 <div class="md:w-[30%]">
-    <contentTitle/>
+    <contentTitle>Add Filter</contentTitle>
     <contentBody/>
     <contentFooter/>
 </div>

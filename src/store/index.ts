@@ -151,7 +151,8 @@ export const useStore = defineStore("store", {
         name: "",
         color: ""
       },
-      showFilterModal: false
+      showFilterModal: false,
+      showLabelModal: false
     };
   },
 })
