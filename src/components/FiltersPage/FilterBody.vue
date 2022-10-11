@@ -25,7 +25,7 @@
             <FilterItem/>
 
         </div>
-        <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
+        <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showLabelModal = true"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
         <div v-if="rotateLabel">
             <LabelItem/>
             <LabelItem/>
@@ -35,6 +35,6 @@
 
         </div>
     </div>
-<!--    <modalMain v-if="store.showFilterModal"/>-->
-    <LabelModalMain/>
+    <modalMain v-if="store.showFilterModal"/>
+    <LabelModalMain v-if="store.showLabelModal"/>
 </template>
