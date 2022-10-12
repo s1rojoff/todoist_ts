@@ -1,7 +1,9 @@
 <script setup lang="ts">
-import contentTitle from '../FilterModal/contentTitle.vue'
-import contentBody from '../FilterModal/contentBody.vue';
-import contentFooter from '../FilterModal/contentFooter.vue'
+    import {useStore} from "../../../store/index";
+    import contentTitle from '../FilterModal/contentTitle.vue'
+    import contentBody from '../FilterModal/contentBody.vue';
+    import contentFooter from '../FilterModal/contentFooter.vue';
+    const store = useStore();
 </script>
 
 <template>

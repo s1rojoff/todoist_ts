@@ -13,6 +13,10 @@
         rotateFilter.value = !rotateFilter.value;
         console.log(rotateFilter)
     }
+    function replaceBg(color:string) {
+        color= color.substring(2);
+        return `text${color}`;
+    }
 </script>
 
 <template>
@@ -20,17 +24,10 @@
         <BodyTitle :rotateClass="[rotateFilter ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showFilterModal = true"  @clickDown="rotateFilter = !rotateFilter">Filters</BodyTitle>
         <div class="md:pl-5"><hr></div>
         <div v-if="rotateFilter">
-            <FilterItem/>
-            <FilterItem/>
-            <FilterItem/>
-
+            <FilterItem v-for="(item, index) in store.filterItems" :color="replaceBg(store.colors[item.index].color)" :key="index">{{item.name}}</FilterItem>
         </div>
         <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showLabelModal = true"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
         <div v-if="rotateLabel">
-            <LabelItem/>
-            <LabelItem/>
-            <LabelItem/>
-            <LabelItem/>
             <LabelItem/>
 
         </div>

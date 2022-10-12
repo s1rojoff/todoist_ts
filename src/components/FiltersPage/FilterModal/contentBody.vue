@@ -4,10 +4,10 @@
     const store = useStore();
     let showSelect = ref<boolean>(false);
     let selectIndex = ref<number>(0);
-
     function showItemIndex(index:number) {
         selectIndex.value = index;
-        showSelect.value = false
+        showSelect.value = false;
+        index ? store.filterColorIndex=index : store.filterColorIndex = 0;
     }
 </script>
 
@@ -16,11 +16,11 @@
         <div class=" md:pl-5 md:pr-5">
             <div class="md:w-full">
                 <label class="text-sm font-bold" for="filter_name">Filter name</label>
-                <input type="text" id="filter_name" class="border md:mt-0.5 rounded outline-none w-full">
+                <input type="text" v-model="store.filterName" id="filter_name" class="border md:mt-0.5 rounded outline-none w-full">
             </div>
             <div class="md:mt-3">
                 <label class="text-sm font-bold" for="filter_query">Filter query</label>
-                <textarea class="border md:mt-0.5 w-full rounded" id="filter_query"></textarea>
+                <textarea v-model="store.filterQuery" class="border outline-none md:mt-0.5 w-full rounded" id="filter_query"></textarea>
             </div>
             <div class="md:mt-2">
                 <p class="text-sm font-bold">Filter color</p>
