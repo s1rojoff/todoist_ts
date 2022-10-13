@@ -157,7 +157,9 @@ export const useStore = defineStore("store", {
       filterItems: ref<object[]>([]),
       filterName: '',
       filterQuery: '',
-      filterColorIndex: 0
+      filterColorIndex: 0,
+      labelItems: ref<string[]>([]),
+      labelName: ref<string>('salom'),
     };
   },
-})
+});

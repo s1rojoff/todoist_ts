@@ -1,11 +1,11 @@
 <script setup lang="ts">
-    import {ref} from 'vue'
+    import {ref,defineProps} from 'vue'
     import {useStore} from "../../../store/index";
     const store = useStore();
     let labelSelect = ref<boolean>(false);
-    let selectItem = ref<number>(0)
+    let selectItem = ref<number>(0);
     function showItemIndex(index:number) {
-        selectItem.value = index
+        selectItem.value = index;
         if(labelSelect){
             labelSelect.value = false
         }
@@ -17,7 +17,7 @@
         <div class=" md:pl-5 md:pr-5">
             <div class="md:w-full">
                 <label class="text-sm font-bold" for="filter_name">Label name</label>
-                <input type="text" id="filter_name" class="border md:mt-0.5 rounded outline-none w-full">
+                <input v-model="store.labelName" type="text" id="filter_name" class="border md:mt-0.5 rounded outline-none w-full">
             </div>
             <div class="md:mt-2">
                 <p class="text-sm font-bold">Label color</p>
