@@ -7,7 +7,7 @@ const attrs = useAttrs();
   <button
     v-bind="attrs"
     class="
-      text-lg
+      text-sm
       md:pt-2 md:pb-2 md:pl-4 md:pr-4
       rounded-lg
       font-semibold

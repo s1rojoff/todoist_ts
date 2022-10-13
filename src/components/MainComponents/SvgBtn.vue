@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineProps, ref } from "vue";
-let titleShow = ref(false);
+let titleShow = ref<boolean>(false);
 const props = defineProps(["width"]);
 </script>
 <template>
@@ -17,7 +17,6 @@ const props = defineProps(["width"]);
         hover:bg-white hover:bg-opacity-30
         rounded-md
         flex
-        text-white
       "
     >
       <slot name="svg"></slot>
