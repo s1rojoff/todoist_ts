@@ -15,7 +15,7 @@
     }
     function replaceBg(color:string) {
         color= color.substring(2);
-        return `text${color}`;
+        return 'text' + color;
     }
 </script>
 
@@ -28,7 +28,7 @@
         </div>
         <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showLabelModal = true"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
         <div v-if="rotateLabel">
-            <LabelItem/>
+            <LabelItem v-for="item in store.labelItems" :key="item">{{item}}</LabelItem>
 
         </div>
     </div>
