@@ -1,6 +1,8 @@
 <script setup lang="ts">
     import {ref,defineProps} from 'vue'
     import {useStore} from "../../../store/index";
+    import BaseInput from '../../MainComponents/BaseInput.vue'
+    import {storeToRefs} from "pinia";
     const store = useStore();
     let labelSelect = ref<boolean>(false);
     let selectItem = ref<number>(0);
@@ -16,8 +18,8 @@
     <div class="bg-white md:pt-4 ">
         <div class=" md:pl-5 md:pr-5">
             <div class="md:w-full">
-                <label class="text-sm font-bold" for="filter_name">Label name</label>
-                <input v-model="store.labelName" type="text" id="filter_name" class="border md:mt-0.5 rounded outline-none w-full">
+                <label class="text-sm font-bold">Label name</label>
+                <BaseInput class="border md:mt-0.5 rounded outline-none w-full" v-model="store.labelName"/>
             </div>
             <div class="md:mt-2">
                 <p class="text-sm font-bold">Label color</p>

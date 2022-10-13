@@ -29,7 +29,6 @@
         <BodyTitle :rotateClass="[rotateLabel ? 'rotate-0' : '-rotate-90']" @clickPlus="store.showLabelModal = true"  @clickDown="rotateLabel = !rotateLabel" class="md:mt-10">Labels</BodyTitle>
         <div v-if="rotateLabel">
             <LabelItem v-for="item in store.labelItems" :key="item">{{item}}</LabelItem>
-
         </div>
     </div>
     <modalMain v-if="store.showFilterModal"/>

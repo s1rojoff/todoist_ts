@@ -159,7 +159,7 @@ export const useStore = defineStore("store", {
       filterQuery: '',
       filterColorIndex: 0,
       labelItems: ref<string[]>([]),
-      labelName: ref<string>('salom'),
+      labelName: ref<string>(''),
     };
   },
 });
