@@ -1,10 +1,12 @@
 <script setup lang="ts">
-    import {defineProps, useAttrs} from 'vue'
+    import {defineProps, useAttrs,ref} from 'vue'
     import FilterSvg from './Svgs/FilterSvg.vue'
     import FavoritesSvg from './Svgs/FavoritesSvg.vue'
     import EditSvg from '../TodayPage/Svgs/EditSvg.vue'
     import MoreAction from '../TodayPage/Svgs/MoreAction.vue'
+    import stringifier from "postcss/lib/stringifier";
     const props = defineProps(['color']);
+    let filterLike = ref<string>('');
 
 </script>
 
@@ -16,7 +18,7 @@
                 <p class="text-sm"><slot></slot></p>
             </div>
             <div class="flex items-center filter">
-                <FavoritesSvg/>
+                <FavoritesSvg @click="filterLike = !filterLike" :class="[filterLike ? 'text-red-500' : 'text-gray-500']"/>
                 <EditSvg class="md:ml-1.5"/>
                 <MoreAction class="md:ml-1.5"/>
             </div>
