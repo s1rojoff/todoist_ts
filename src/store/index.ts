@@ -34,7 +34,7 @@ export const useStore = defineStore("store", {
         },
         {
           id: 2,
-          color: "bg-red-600",
+          color: ref<string>("bg-red-600"),
           Name: "Red",
         },
         {
@@ -109,7 +109,7 @@ export const useStore = defineStore("store", {
         },
         {
           id: 16,
-          color: "bg-rose-300",
+          color: ref<string>("bg-rose-300"),
           Name: "Salmon",
         },
         {
@@ -155,6 +155,13 @@ export const useStore = defineStore("store", {
       showFilterModal: false,
       commentItems  : ref<Object[]>([]),
       editId : ref<number>(0)
+      showLabelModal: false,
+      filterItems: ref<object[]>([]),
+      filterName: '',
+      filterQuery: '',
+      filterColorIndex: 0,
+      labelItems: ref<string[]>([]),
+      labelName: ref<string>(''),
     };
   },
-})
+});

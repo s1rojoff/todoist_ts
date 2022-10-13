@@ -1,8 +1,10 @@
 <script setup lang="ts">
-import LabelSvg from './Svgs/LabelSvg.vue'
-import FavoritesSvg from './Svgs/FavoritesSvg.vue'
-import EditSvg from '../TodayPage/Svgs/EditSvg.vue'
-import MoreAction from '../TodayPage/Svgs/MoreAction.vue'
+    import {ref} from 'vue';
+    import LabelSvg from './Svgs/LabelSvg.vue'
+    import FavoritesSvg from './Svgs/FavoritesSvg.vue'
+    import EditSvg from '../TodayPage/Svgs/EditSvg.vue'
+    import MoreAction from '../TodayPage/Svgs/MoreAction.vue';
+    let changesColor = ref<boolean>(false);
 </script>
 
 <template>
@@ -10,10 +12,10 @@ import MoreAction from '../TodayPage/Svgs/MoreAction.vue'
         <div class="flex items-center justify-between">
             <div class="flex items-center">
                 <LabelSvg/>
-                <p class="text-sm">alik</p>
+                <p class="text-sm"><slot></slot></p>
             </div>
             <div class="flex items-center filter">
-                <FavoritesSvg/>
+                <FavoritesSvg :class="[changesColor ? 'text-red-500' : 'text-gray-500']" @click="changesColor = !changesColor"/>
                 <EditSvg class="md:ml-1.5"/>
                 <MoreAction class="md:ml-1.5"/>
             </div>
