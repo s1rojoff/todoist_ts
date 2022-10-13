@@ -4,7 +4,8 @@
     import FavoritesSvg from './Svgs/FavoritesSvg.vue'
     import EditSvg from '../TodayPage/Svgs/EditSvg.vue'
     import MoreAction from '../TodayPage/Svgs/MoreAction.vue'
-    const props = defineProps(['color'])
+    const props = defineProps(['color']);
+
 </script>
 
 <template>

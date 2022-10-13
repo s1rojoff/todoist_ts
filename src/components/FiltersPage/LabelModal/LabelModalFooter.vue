@@ -1,11 +1,16 @@
 <script setup lang="ts">
+    import {ref} from 'vue'
     import {useStore} from "../../../store";
     import checkbox from '../../MainComponents/Checkbox.vue'
     import ActiveAdd from '../../MainComponents/ActiveAdd.vue';
     const store = useStore();
-    let test:string = store.filterName;
     function addLabelItem() {
-        console.log(test)
+        if(store.labelName){
+            store.labelItems.push(store.labelName);
+        }
+        store.labelName = '';
+        store.showLabelModal = false;
+        console.log(store.labelItems[0])
     }
 </script>
 <template>
