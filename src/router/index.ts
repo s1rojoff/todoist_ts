@@ -10,6 +10,7 @@ import Today from '../views/Today.vue'
 import Upcoming from '../views/Upcoming.vue'
 import Filters from '../views/FiltersPage.vue'
 import OnBoardPage from '../views/OnBoardPage.vue'
+import commentsMain from '../views/Comments/commentsMain.vue'
 const router = createRouter({
   history: createWebHistory(),
   linkActiveClass: 'active-link',
@@ -36,33 +37,37 @@ const router = createRouter({
       component: AuthLoginPage
     },
     {
-      path : '/app',
-      component : AppPage,
+      path: '/app',
+      component: AppPage,
       children: [
         {
-          path :'project',
-          component : Inbox  
+          path: 'project',
+          component: Inbox,
         },
         {
-          path : 'today',
-          component : Today
+          path: 'today',
+          component: Today
         },
         {
-          path : 'upcoming',
-          component : Upcoming
+          path: 'upcoming',
+          component: Upcoming
         },
         {
-          path : 'filters',
-          component : Filters
+          path: 'filters',
+          component: Filters
+        },
+        {
+          path : 'comments',
+          component : commentsMain 
         }
       ]
     },
     {
-      path:'/app/onboard/use-case',
+      path: '/app/onboard/use-case',
       component: OnBoardPage
     },
     {
-      path:'/today',
+      path: '/today',
       component: AppPage
     }
   ],

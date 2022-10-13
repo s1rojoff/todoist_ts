@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-<script setup>
-    import {defineEmits,ref,} from 'vue';
-    import {useStore} from "../../store";
-=======
+
 <script setup lang="ts">
     import {defineEmits,ref} from 'vue'
->>>>>>> 1514e2cb1af65ab73e18007a941c989cf26fbf37
+    import {useStore} from '../../store'
     import FilterItem from './FilterItem.vue';
     import LabelItem from './LabelItem.vue';
     import BodyTitle from './BodyTitle.vue'

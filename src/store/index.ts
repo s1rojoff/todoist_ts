@@ -1,4 +1,5 @@
 import { defineStore } from "pinia";
+import {ref, Ref} from 'vue'
 export const useStore = defineStore("store", {
   state: () => {
     return {
@@ -151,7 +152,9 @@ export const useStore = defineStore("store", {
         name: "",
         color: ""
       },
-      showFilterModal: false
+      showFilterModal: false,
+      commentItems  : ref<Object[]>([]),
+      editId : ref<number>(0)
     };
   },
 })

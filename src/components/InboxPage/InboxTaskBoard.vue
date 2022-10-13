@@ -17,7 +17,7 @@
      const attrs = useAttrs();
     </script>
     <template>
-        <div v-bind="attrs" class="border w-full rounded-xl md:pl-3 md:pb-2 md:pr-3 md:pt-2">
+        <div v-bind="attrs" class="border w-full rounded-xl md:pl-3 md:pb-2 md:pr-3 md:pt-2 bg-white">
             <textarea v-model="store.inboxSecTask_task"  class="border-none md:w-full text-sm outline-none" rows="1" placeholder="Task name"></textarea>
             <input type="text" v-model="store.inboxSecTask_description" class="font-thin text-sm outline-none" placeholder="Description">
             <div class="flex items-center md:mt-5 justify-between">
@@ -89,11 +89,11 @@
                 </div>
             </div>
 
-        </div>
-        <div class="flex justify-end md:mt-3">
-            <div class="flex items-center">
-                <ActiveAdd @click="$emit('cancel')" class="md:mr-5 cursor-pointer bg-gray-100">Cancel</ActiveAdd>
-                <ActiveAdd @click="$emit('addTask')"  class="bg-red-700 text-white">Add</ActiveAdd>
+            <div class="flex justify-end md:mt-3">
+                <div class="flex items-center">
+                    <ActiveAdd @click="$emit('cancel')" class="md:mr-5 cursor-pointer bg-gray-100">Cancel</ActiveAdd>
+                    <ActiveAdd @click="$emit('addTask')"  class="bg-red-700 text-white">Add</ActiveAdd>
+                </div>
             </div>
         </div>
     </template>
